@@ -2,7 +2,7 @@
     package="io.horizontalsystems.netkit">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <application>
+    <application android:extractNativeLibs="true">
         <service android:name=".NetService" android:exported="false" android:stopWithTask="false" />
     </application>
 </manifest>
